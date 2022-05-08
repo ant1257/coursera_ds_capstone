@@ -1,3 +1,6 @@
+# Important note:
+# All the work has been done in the 03-02-spacex-launch-dash.py file
+
 # Import required libraries
 import pandas as pd
 import dash
@@ -44,5 +47,5 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
 
 
 # Run the app
-if __name__ == '__main__':
-    app.run_server()
+# if __name__ == '__main__':
+#     app.run_server()
