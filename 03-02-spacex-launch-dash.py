@@ -16,8 +16,16 @@
 # Libraries
 import os
 import pandas as pd
-import plotly.express as px
-import dash
+try:
+    import plotly.express as px
+except Exception as e:
+    os.system('pip install plotly')
+    import plotly.express as px
+try:
+    import dash
+except Exception as e:
+    os.system('pip install dash')
+    import dash
 from dash import html, dcc
 from dash.dependencies import Input, Output
 
